@@ -5,6 +5,7 @@ different elements about it. BLAHBLAHBLAHBLAH.
 When you're ready, hit 'return' to start.""")
 input()
 
+#user input
 uTi = input("""What is the name of the song?
 Song Name: """)
 print("")
@@ -56,3 +57,12 @@ print("")
 uTpo = input(""" Rate the
 """)
 print("")
+
+#algorithm
+if SongLGen == uGen:
+    print()
+else:
+    print()
+
+
+#graphics

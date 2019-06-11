@@ -59,10 +59,6 @@ uTpo = input(""" Rate the
 print("")
 
 #algorithm
-if SongLGen == uGen:
-    print()
-else:
-    print()
-
+from algorithumML import *
 
 #graphics

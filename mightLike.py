@@ -62,3 +62,4 @@ print("")
 from algorithumML import *
 
 #graphics
+from graphicsML import *

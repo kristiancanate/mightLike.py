@@ -9,53 +9,53 @@ input()
 uTi = input("""What is the name of the song?
 Song Name: """)
 print("")
-uCr = input(""" what is the creator of this song?
-creator Name: """)
+uCr = input("""Who created the song?
+Creators Name(s): """)
 print("")
-uPer = input(""" who is the performer?
-Performer Name: """)
+uPer = input("""Who performs the song?
+Performers Name(s): """)
 print("")
-uLang = input(""" what is the language of this song?
+uLang = input("""What language is the song in?
 Language: """)
 print ("")
-uDate = input(""" what date was this song recorded?
+uDate = input("""In what year was this song recorded?
 Date: """)
 print("")
-uGen = input(""" what the genre of this song?
+uGen = input("""What is the main genre of the song?
 Genre: """)
 print("")
-uSubG = input(""" what the sub-genre of this song?
+uSubG = input("""What is the sub-genre of the song?
 Sub-genre: """)
 print("")
-uTop = input(""" what the topic of the song?
+uTop = input("""What is the topic of the song?
 Topic: """)
 print("")
-uMood = input(""" what the mood?
+uMood = input("""What is the mood of the song?
 Mood: """)
 print("")
-uDI = input(""" what the dominant instrument?
+uDI = input("""What is the dominant instrument that's being played?
 instrument: """)
 print("")
-uISk = input(""" Rate the intsrum
-""")
+uISk = input("""Rate the intsrumental skill from 0-10.
+Instrumental Skill: """)
 print("")
-uLy = input(""" Rate the
-""")
+uLy = input("""Rate the lyrics from 0-10.
+Lyrics: """)
 print("")
-uVo = input(""" Rate the
-""")
+uVo = input("""Rate the vocals from 0-10.
+Vocals: """)
 print("")
-uMel = input(""" Rate the
-""")
+uMel = input("""Rate the melody from 0-10.
+Melody: """)
 print("")
-uRhy = input(""" Rate the
-""")
+uRhy = input("""Rate the rhythm from 0-10.
+Rhythm: """)
 print("")
-uDDR = input(""" Rate the
-""")
+uDDR = input("""Rate how much the song makes you want to dance from from 0-10.
+'Danciness': """)
 print("")
-uTpo = input(""" Rate the
-""")
+uTpo = input("""Rate the tempo of them song from 0-10.
+Tempo: """)
 print("")
 
 #algorithm

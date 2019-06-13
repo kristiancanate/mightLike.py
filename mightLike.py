@@ -3,7 +3,10 @@
 from uInpData import *
 
 print("""In this program, you will first be asked for a song and
-different elements about it. BLAHBLAHBLAHBLAH.
+the different elements about it. Read each question carefully and 
+take your time answering. After you finish answering the questions,
+the program will run through a song library and suggest a song
+you may like according to the one you entered.
 When you're ready, hit 'return' to start.""")
 input()
 

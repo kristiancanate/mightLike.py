@@ -1,62 +1,56 @@
 #mightLike by Kristian, Darius, Shandrika, Mariana, and Eric
 
+from uInpData import *
+
 print("""In this program, you will first be asked for a song and
 different elements about it. BLAHBLAHBLAHBLAH.
 When you're ready, hit 'return' to start.""")
 input()
 
+def run_quest (var, que):
+    var = input(que)
+    print("")
+    global inp
+    inp = var
+
 #user input
-uTi = input("""What is the name of the song?
-Song Name: """)
-print("")
-uCr = input("""Who created the song?
-Creators Name(s): """)
-print("")
-uPer = input("""Who performs the song?
-Performers Name(s): """)
-print("")
-uLang = input("""What language is the song in?
-Language: """)
-print ("")
-uDate = input("""In what year was this song recorded?
-Date: """)
-print("")
-uGen = input("""What is the main genre of the song?
-Genre: """)
-print("")
-uSubG = input("""What is the sub-genre of the song?
-Sub-genre: """)
-print("")
-uTop = input("""What is the topic of the song?
-Topic: """)
-print("")
-uMood = input("""What is the mood of the song?
-Mood: """)
-print("")
-uDI = input("""What is the dominant instrument that's being played?
-instrument: """)
-print("")
-uISk = input("""Rate the intsrumental skill from 0-10.
-Instrumental Skill: """)
-print("")
-uLy = input("""Rate the lyrics from 0-10.
-Lyrics: """)
-print("")
-uVo = input("""Rate the vocals from 0-10.
-Vocals: """)
-print("")
-uMel = input("""Rate the melody from 0-10.
-Melody: """)
-print("")
-uRhy = input("""Rate the rhythm from 0-10.
-Rhythm: """)
-print("")
-uDDR = input("""Rate how much the song makes you want to dance from from 0-10.
-'Danciness': """)
-print("")
-uTpo = input("""Rate the tempo of them song from 0-10.
-Tempo: """)
-print("")
+run_quest(uTi, uTiQ)
+uTi = inp
+run_quest(uCr, uCrQ)
+uCr = inp
+run_quest(uPer, uPerQ)
+uPer = inp
+run_quest(uLang, uLangQ)
+uLang = inp
+run_quest(uDate, uDateQ)
+uDate = inp
+run_quest(uGen, uGenQ)
+uGen = inp
+run_quest(uSubG, uSubGQ)
+uSubG = inp
+run_quest(uTop, uTopQ)
+uTop = inp
+run_quest(uMood, uMoodQ)
+uMood = inp
+run_quest(uDI, uDIQ)
+uDI = inp
+run_quest(uISk, uISkQ)
+uISk = inp
+run_quest(uLy, uLyQ)
+uLy = inp
+run_quest(uVo, uVoQ)
+uVo = inp
+run_quest(uMel, uMelQ)
+uMel = inp
+run_quest(uRhy, uRhyQ)
+uRhy = inp
+run_quest(uDDR, uDDRQ)
+uDDR = inp
+run_quest(uTpo, uTpoQ)
+uTpo = inp
+
+print(uTi, uCr, uPer, uLang, uDate, uGen, uSubG, uTop, uMood, uDI, uISk,
+      uLy, uVo, uMel, uRhy, uDDR, uTpo)
 
 #algorithm
 from algorithumML import *

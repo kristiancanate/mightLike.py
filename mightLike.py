@@ -1,6 +1,7 @@
 #mightLike by Kristian, Darius, Shandrika, Mariana, and Eric
 
 from uInpData import *
+isInt = False
 
 print("""In this program, you will first be asked for a song and
 the different elements about it. Read each question carefully and 
@@ -19,8 +20,26 @@ uPer = input(uPerQ)
 print("")
 uLang = input(uLangQ)
 print("")
-uDate = input(uDateQ)
-print("")
+while isInt == False:
+      try:
+            uDate = int(input(uDateQ))
+            if len(str(uDate)) != 4:
+                  print("""
+That is not a valid year.
+Please choose a song ranging from the 1900-2019.
+""")
+            elif 2019 < uDate < 1900:
+                  print("""
+Please choose a song ranging from the 1900-2019.
+""")
+            else:
+                  print("")
+                  isInt = True
+      except ValueError:
+            print("""
+That was not an integer.
+""")
+isInt = False
 uGen = input(uGenQ)
 print("")
 uSubG = input(uSubGQ)
@@ -31,19 +50,19 @@ uMood = input(uMoodQ)
 print("")
 uDI = input(uDIQ)
 print("")
-uISk = input(uISkQ)
+uISk = int(input(uISkQ))
 print("")
-uLy = input(uLyQ)
+uLy = int(input(uLyQ))
 print("")
-uVo = input(uVoQ)
+uVo = int(input(uVoQ))
 print("")
-uMel = input(uMelQ)
+uMel = int(input(uMelQ))
 print("")
-uRhy = input(uRhyQ)
+uRhy = int(input(uRhyQ))
 print("")
-uDDR = input(uDDRQ)
+uDDR = int(input(uDDRQ))
 print("")
-uTpo = input(uTpoQ)
+uTpo = int(input(uTpoQ))
 print("")
 
 print(uTi, uCr, uPer, uLang, uDate, uGen, uSubG, uTop, uMood, uDI, uISk,

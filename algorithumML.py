@@ -1,21 +1,63 @@
 # Algorithum for SL
+import csv
 
-def formatMusic(fileName):
-    songLib = open(fileName,"r")
-    songLib_data = []
-    for line in songLib:
-        number_songs = line.split("\t")
-        songs = [n for n in number_songs]
-        songLib_data.append(songs)
-    for song in songLib_data:
-        song[16] = (song[16][:1])
-    songLib_data_tuple = tuple(songLib_data)
-    return songLib_data_tuple
+# Int Variables
+slTi = "Purple Emoji"
 
-songList = formatMusic("songLib.tsv")
-print(songList)
+slCr = "Ty Dolla $ign, J.Cole"
 
-#if SongLGen == uGen:
-    #print()
-#else:
- #   print()
+slPer = "Ty Dolla $ign, J.Cole"
+
+slLang = "English"
+
+slDate = "2019"
+
+slGen = "R&B"
+
+slSubG = "Soul"
+
+slTop = "Relationships"
+
+slMood = "Smooth"
+
+slDI = "Drums"
+
+
+slISK = 5
+
+slLy = 6
+
+slVo = 8
+
+slMel = 7
+
+slRhy = 9
+
+slDDR = 5
+
+slTpo = 4
+
+# create lists
+#sList = []
+genMat = []
+
+sList = [row for row in csv.reader(open("songLib.tsv", encoding ='utf-8'), delimiter ="\t")]
+##
+##with open("songLib.tsv", newline = '', encoding = 'utf - 8') as file:
+##          for row in csv.reader(file):
+##              sList.append(row)
+
+del sList[0]
+del sList[0]
+
+for song in range(len(sList)):
+    if sList[song][5] == slGen:
+        print("*")
+        genMat.append(sList[song])
+        
+        
+    
+
+
+
+
